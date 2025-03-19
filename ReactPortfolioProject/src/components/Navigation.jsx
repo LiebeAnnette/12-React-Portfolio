@@ -6,10 +6,16 @@ export default function Navigation() {
 		<nav>
 			<ul>
 				<li>
-					<Link to="/">Home</Link>
+					<Link to="/">About Me</Link>
 				</li>
 				<li>
-					<Link to="/projects">Projects</Link>
+					<Link to="/portfolio">Portfolio</Link>
+				</li>
+				<li>
+					<Link to="/contact">Contact</Link>
+				</li>
+				<li>
+					<Link to="/resume">Resume</Link>
 				</li>
 			</ul>
 		</nav>

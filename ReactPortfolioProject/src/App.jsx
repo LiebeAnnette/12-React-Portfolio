@@ -2,22 +2,26 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/Header";
-import Projects from "./components/Project";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 export default function App() {
-	return (
-		<Router>
-			<Header />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/projects" element={<Projects />} />
-			</Routes>
-			<Footer />
-		</Router>
-	);
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<AboutMe />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-function Home() {
-	return <h1>Home Page</h1>;
+function AboutMe() {
+  return <h1>Liebe Stevenson</h1>;
 }
