@@ -1,22 +1,49 @@
 import React from "react";
 
 export default function Project({ title, image, deployedLink, githubLink }) {
-  return (
-    <div className="card shadow-sm border-0">
-      <a href={deployedLink} target="_blank" rel="noopener noreferrer">
-        <img src={image} className="card-img-top" alt={title} />
-      </a>
-      <div className="card-body text-center">
-        <h5 className="card-title">{title}</h5>
-        <div className="d-flex justify-content-center">
-          <a href={deployedLink} className="btn btn-primary me-2" target="_blank" rel="noopener noreferrer">
-            Live App
-          </a>
-          <a href={githubLink} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-            GitHub Repo
-          </a>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="card shadow-sm h-100 border-0">
+			<img
+				src={image}
+				className="card-img-top"
+				alt={title}
+				style={{ objectFit: "cover", height: "200px" }}
+			/>
+			<div className="card-body d-flex flex-column">
+				<h5 className="card-title" style={{ color: "#794E57" }}>
+					{title}
+				</h5>
+				<div className="mt-auto">
+					<a
+						href={deployedLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="btn me-2"
+						style={{
+							backgroundColor: "#E6B037",
+							color: "#fff",
+							fontWeight: "bold",
+							borderRadius: "8px",
+						}}
+					>
+						View App
+					</a>
+					<a
+						href={githubLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="btn"
+						style={{
+							backgroundColor: "#B0824B",
+							color: "#fff",
+							fontWeight: "bold",
+							borderRadius: "8px",
+						}}
+					>
+						GitHub
+					</a>
+				</div>
+			</div>
+		</div>
+	);
 }

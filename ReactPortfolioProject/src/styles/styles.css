@@ -1,0 +1,14 @@
+/* CSS HEX */
+--tea-green: #dbf4adff;
+--light-green: #a9e190ff;
+--citron: #cdc776ff;
+--moss-green: #a5aa52ff;
+--olive: #767522ff;
+
+/* CSS HSL */
+--tea-green: hsla(81, 76%, 82%, 1);
+--light-green: hsla(101, 57%, 72%, 1);
+--citron: hsla(56, 47%, 63%, 1);
+--moss-green: hsla(63, 35%, 49%, 1);
+--olive: hsla(59, 55%, 30%, 1);
+

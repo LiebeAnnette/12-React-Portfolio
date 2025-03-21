@@ -11,7 +11,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4">My Portfolio</h1>
+      <h1 className="text-center mb-4" style={{ color: "#794E57" }}>My Portfolio</h1>
       <div className="row g-4">
         {projects.map((project, index) => (
           <div key={index} className="col-md-6 col-lg-4">
