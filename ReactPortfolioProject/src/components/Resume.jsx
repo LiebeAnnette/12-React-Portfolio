@@ -11,10 +11,10 @@ export default function Resume() {
 					<h1 className="mb-0 text-center">Resume</h1>
 				</div>
 				<div className="card-body">
-					{/* Downloadable Resume Link */}
 					<p className="text-center">
 						Download my{" "}
 						<a
+						// I can replace this later with an actual resume :)
 							href="/ResumeExample.pdf"
 							download
 							style={{ color: "#B0824B", fontWeight: "bold" }}

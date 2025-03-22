@@ -1,5 +1,4 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap for styling (optional)
 
 export default function AboutMe() {
   return (
@@ -18,7 +17,7 @@ export default function AboutMe() {
           border: "3px solid #ddd",
         }}
       />
-
+      {/* I will add more to this bio in the future */}
       <p>
         Hello! I’m a passionate developer excited about building web
         applications. Welcome to my portfolio!
